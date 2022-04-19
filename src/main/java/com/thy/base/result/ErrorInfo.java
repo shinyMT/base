@@ -1,13 +1,13 @@
-package com.thy.thy_base.result;
+package com.thy.base.result;
 
 import java.io.Serializable;
 
 /**
  * Author: thy
- * Date: 2022/4/19 14:51
+ * Date: 2022/4/19 16:27
  */
 public class ErrorInfo implements Serializable {
-    private static final long serialVersionUID = 7536136047115047417L;
+    private static final long serialVersionUID = 4685199240511200051L;
 
     private int code;
     private String message;
@@ -18,7 +18,7 @@ public class ErrorInfo implements Serializable {
     }
 
     public int getCode() {
-        return code;
+        return this.code;
     }
 
     public void setCode(int code) {
@@ -26,10 +26,11 @@ public class ErrorInfo implements Serializable {
     }
 
     public String getMessage() {
-        return message;
+        return this.message;
     }
 
     public void setMessage(String message) {
         this.message = message;
     }
+
 }

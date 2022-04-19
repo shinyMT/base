@@ -1,14 +1,14 @@
-package com.thy.thy_base.result;
+package com.thy.base.result;
 
 /**
  * Author: thy
- * Date: 2022/4/19 14:48
- * 错误代码类，警告信息为正数，错误信息为负数，从01~99依次编码
+ * Date: 2022/4/19 16:28
+ * 错误代码类
  */
 public class ErrorCode {
-    private ErrorCode(){
-
+    private ErrorCode() {
     }
+
     // 成功
     public static final int SUCCESS = 0;
 

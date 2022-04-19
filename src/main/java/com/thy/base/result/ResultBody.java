@@ -1,31 +1,29 @@
-package com.thy.thy_base.result;
+package com.thy.base.result;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-
 /**
  * Author: thy
- * Date: 2022/4/19 14:39
+ * Date: 2022/4/19 16:26
  */
-public class ResultBody<T> {
+public class ResultBody <T>{
     /**
      * 响应代码
-     * */
+     */
     @JsonProperty("code")
     private int code;
 
     /**
      * 响应消息
-     * */
+     */
     @JsonProperty("message")
     private String message;
 
     /**
      * 响应结果
-     * */
+     */
     @JsonProperty("result")
     private T result;
-
 
     public ResultBody(ErrorInfo errorInfo) {
         this.code = errorInfo.getCode();
@@ -38,13 +36,13 @@ public class ResultBody<T> {
         this.result = result;
     }
 
-    public ResultBody(int code, String message, T result) {
+    public ResultBody(int code, String msg, T result) {
         this.code = code;
-        this.message = message;
+        this.message = msg;
         this.result = result;
     }
 
-    public static ResultBody<String> success(){
+    public static ResultBody<String> success() {
         return new ResultBody<>(ErrorInfoEnum.SUCCESS.getMessage());
     }
 
@@ -71,4 +69,5 @@ public class ResultBody<T> {
     public void setResult(T result) {
         this.result = result;
     }
+
 }
