@@ -32,6 +32,8 @@ public class ErrorCode {
     public static final int LOGIN_PW_ERR = -303;
     // 账户停用
     public static final int LOGIN_ACCOUNT_DISABLED = -304;
+    // 邮箱异常
+    public static final int LOGIN_EMAIL_ERROR = -305;
 
     /**
      * ============访问权限相关问题==================
